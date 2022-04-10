@@ -1,12 +1,14 @@
 import { useState } from 'react'
 
+import PetCard from '../../components/PetCard/PetCard'
+
 const MyPets = (props) => {
   return (
     <>
       <h1>These are all of my pets</h1>
       <section>
         {props.pets.map((pet) => (
-          <h2>I'm a pet</h2>
+          <PetCard pet={pet} key={pet.id} />
         ))}
       </section>
     </>
