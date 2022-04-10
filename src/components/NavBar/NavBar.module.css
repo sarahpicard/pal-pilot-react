@@ -1,4 +1,25 @@
-li {
-  text-decoration: none;
+.li {
   list-style: none;
+  margin-left: auto;
+  margin-top: 30%;
+  font-size: 20px;
+}
+.a {
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  position: fixed;
+  background-color: #fde5d7;
+  height: 100vh;
+  width: 12%;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+.name {
+  font-size: 30px;
+  margin-left: auto;
+  margin-top: 25%;
 }

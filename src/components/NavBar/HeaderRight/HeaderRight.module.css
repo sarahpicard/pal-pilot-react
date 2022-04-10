@@ -2,6 +2,7 @@
   font-size: 15px;
   margin-left: 15px;
   display: inline-block;
+  color: black;
 }
 .word_li {
   display: inline-block;
@@ -16,8 +17,9 @@
   display: flexbox;
   float: right;
   background-color: #fde5d7;
-  margin-right: 70px;
+  margin-right: 2%;
   border-radius: 70px;
+  margin-top: 1%;
 }
 .avatar {
   height: 3rem;

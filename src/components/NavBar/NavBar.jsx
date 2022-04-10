@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FaPaw } from 'react-icons/fa'
+
 import styles from './NavBar.module.css'
 
 
@@ -7,22 +8,22 @@ const NavBar = (props) => {
   return (
     <>
       {props.user ?
-        <nav>
+        <div className={styles.nav}>
           <ul>
-            <li><Link to="/" style={{ textDecoration: 'none' }}><FaPaw />Pal Pilot</Link></li>
-            <li><Link to="/pets" style={{ textDecoration: 'none' }}>My Pets</Link></li>
-            <li><Link to="/addpet" style={{ textDecoration: 'none' }}>Add a New Pet</Link></li>
-            <li><Link to="/appointments" style={{ textDecoration: 'none' }}>Appointments</Link></li>
+            <li className={`${styles.li} ${styles.name}`}><Link to="/" className={styles.a}><FaPaw />Pal Pilot</Link></li>
+            <li className={styles.li}><Link to="/pets" className={styles.a}>My Pets</Link></li>
+            <li className={styles.li}><Link to="/addpet" className={styles.a}>Add a New Pet</Link></li>
+            <li className={styles.li}><Link to="/appointments" className={styles.a}>Appointments</Link></li>
           </ul>
-        </nav>
+        </div>
       :
-        <nav>
+        <div className={styles.nav}>
           <ul>
-            <li><Link to="/" style={{ textDecoration: 'none' }}><FaPaw />Pal Pilot</Link></li>
-            <li><Link to="/login" style={{ textDecoration: 'none' }}>Log In</Link></li>
-            <li><Link to="/signup" style={{ textDecoration: 'none' }}>Sign Up</Link></li>
+            <li className={styles.li}><Link to="/" className={styles.a}><FaPaw />Pal Pilot</Link></li>
+            <li className={styles.li}><Link to="/login" className={styles.a}>Log In</Link></li>
+            <li className={styles.li}><Link to="/signup" className={styles.a}>Sign Up</Link></li>
           </ul>
-        </nav>
+        </div>
       }
     </>
   )
