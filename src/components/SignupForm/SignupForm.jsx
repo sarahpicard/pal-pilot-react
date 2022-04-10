@@ -30,7 +30,7 @@ const SignupForm = props => {
     signupFormData.append('passwordConf', formData.passwordConf)
 
     try {
-      await authService.signup(signupFormData)
+      await authService.signup(formData)
       props.handleSignupOrLogin()
       navigate('/')
     } catch (err) {
