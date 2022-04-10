@@ -14,7 +14,7 @@ const AddPetForm = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     id ? props.updatePet(form) : props.addPet(form)
-    navigate('/mypets')
+    navigate('/pets')
   }
 
   // add form data to state
