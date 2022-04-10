@@ -17,9 +17,9 @@ const App = () => {
   useEffect(() => {
     if (user) {
       profileService.getAllProfiles()
-      .then(allProfiles => setProfiles(allProfiles))
+        .then(allProfiles => setProfiles(allProfiles))
     }
-  }, [user])  
+  }, [user])
 
   const handleLogout = () => {
     authService.logout()
@@ -46,11 +46,11 @@ const App = () => {
         />
         <Route
           path="/profiles"
-          element={user ? <Profiles profiles={profiles}/> : <Navigate to="/login" />}
+          element={user ? <Profiles profiles={profiles} /> : <Navigate to="/login" />}
         />
         <Route
           path="/changePassword"
-          element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin}/> : <Navigate to="/login" />}
+          element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin} /> : <Navigate to="/login" />}
         />
       </Routes>
     </>
