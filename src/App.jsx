@@ -6,6 +6,10 @@ import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
+import MyPets from './pages/MyPets/MyPets'
+import AddPet from './pages/AddPet/AddPet'
+import MyProfile from './pages/MyProfile/MyProfile'
+import Appointments from './pages/Appointments/Appointments'
 import * as authService from './services/authService'
 import * as profileService from './services/profileService'
 
@@ -51,6 +55,22 @@ const App = () => {
         <Route
           path="/changePassword"
           element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin} /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/mypets"
+          element={user ? <MyPets user={user} /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/addpet"
+          element={user ? <AddPet user={user} /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/appointments"
+          element={user ? <Appointments user={user} /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/myprofile"
+          element={user ? <MyProfile user={user} /> : <Navigate to="/login" />}
         />
       </Routes>
     </>
