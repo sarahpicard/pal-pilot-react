@@ -21,7 +21,7 @@ function getToken() {
 function getUserFromToken() {
   const token = getToken()
   return token
-    ? JSON.parse(Buffer.from(token.split('.')[1], 'base64')).user
+    ? JSON.parse(Buffer.from(token.split('.')[1], 'base64'))
     : null
 }
 
