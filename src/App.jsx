@@ -9,6 +9,7 @@ import MyPets from './pages/MyPets/MyPets'
 import AddPetForm from './pages/AddPet/AddPetForm'
 import MyProfile from './pages/MyProfile/MyProfile'
 import Appointments from './pages/Appointments/Appointments'
+
 import * as authService from './services/authService'
 import * as profileService from './services/profileService'
 import * as petService from './services/petService'
@@ -27,6 +28,15 @@ const App = () => {
     }
   }, [user])
 
+  // use effect to get all pets
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await petService.getAll()
+      setPets(data)
+    }
+    fetchData()
+  }, [])
+
   // use effect to handle logout
   const handleLogout = () => {
     authService.logout()
@@ -44,6 +54,7 @@ const App = () => {
     const pet = await petService.create(petData)
     setPets([...pets, pet])
   }
+
 
   return (
     <>
@@ -64,7 +75,7 @@ const App = () => {
         />
         <Route
           path="/mypets"
-          element={user ? <MyPets user={user} /> : <Navigate to="/login" />}
+          element={user ? <MyPets user={user} pets={pets} /> : <Navigate to="/login" />}
         />
         <Route
           path="/addpet"

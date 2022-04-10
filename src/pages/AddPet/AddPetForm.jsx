@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
+import { getOne } from '../../services/petService'
+
 import AddPetInput from './AddPetInput'
 
 const AddPetForm = (props) => {
@@ -19,6 +21,23 @@ const AddPetForm = (props) => {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
+
+  // use effect for form
+  useEffect(() => {
+    const fetchOne = async () => {
+      const data = await getOne(id)
+      setForm({
+        id: data.pet.id,
+        name: data.pet.name,
+        breed: data.pet.breed,
+        animal_type: data.pet.animal_type,
+        age: data.pet.age,
+        weight: data.pet.weight
+      })
+    }
+    id && fetchOne()
+    return () => setForm({})
+  }, [id])
 
   return(
     <>

@@ -8,6 +8,10 @@ const AddPetInput = (props) => {
             type="text"  
             placeholder='pet name'
             autoComplete='off'
+            value={props.form.name ? props.form.name : ''}
+            onChange={props.handleChange}
+            id="name"
+            name="name"
           />
         </label>
         <label htmlFor="breed">Breed:
@@ -15,6 +19,10 @@ const AddPetInput = (props) => {
             type="text" 
             placeholder='pet breed'
             autoComplete='off'
+            value={props.form.breed ? props.form.breed : ''}
+            onChange={props.handleChange}
+            id="breed"
+            name="breed"
             />
         </label>
         <label htmlFor="animal_type">Animal Type:
@@ -22,6 +30,10 @@ const AddPetInput = (props) => {
             type="text" 
             placeholder='animal type'
             autoComplete='off'
+            value={props.form.animal_type ? props.form.animal_type : ''}
+            onChange={props.handleChange}
+            id="animal_type"
+            name="animal_type"
             />
         </label>
         <label htmlFor="age">Pet Age:
@@ -29,6 +41,10 @@ const AddPetInput = (props) => {
             type="text" 
             placeholder='pet age'
             autoComplete='off'
+            value={props.form.age ? props.form.age : ''}
+            onChange={props.handleChange}
+            id="age"
+            name="age"
             />
         </label>
         <label htmlFor="weight">Weight:
@@ -36,6 +52,10 @@ const AddPetInput = (props) => {
             type="text" 
             placeholder='pet weight'
             autoComplete='off'
+            value={props.form.weight ? props.form.weight : ''}
+            onChange={props.handleChange}
+            id="weight"
+            name="weight"
             />
         </label>
     </>
