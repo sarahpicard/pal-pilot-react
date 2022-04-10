@@ -6,17 +6,20 @@ import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import MyPets from './pages/MyPets/MyPets'
-import AddPet from './pages/AddPet/AddPet'
+import AddPetForm from './pages/AddPet/AddPetForm'
 import MyProfile from './pages/MyProfile/MyProfile'
 import Appointments from './pages/Appointments/Appointments'
 import * as authService from './services/authService'
 import * as profileService from './services/profileService'
+import * as petService from './services/petService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [profiles, setProfiles] = useState([])
   const navigate = useNavigate()
+  const [pets, setPets] = useState([])
 
+  // use effect to get all profiles
   useEffect(() => {
     if (user) {
       profileService.getAllProfiles()
@@ -24,14 +27,22 @@ const App = () => {
     }
   }, [user])
 
+  // use effect to handle logout
   const handleLogout = () => {
     authService.logout()
     setUser(null)
     navigate('/')
   }
 
+  // use effect to handle signup or login
   const handleSignupOrLogin = () => {
     setUser(authService.getUser())
+  }
+
+  // handle add new pet
+  const addPet = async (petData) => {
+    const pet = await petService.create(petData)
+    setPets([...pets, pet])
   }
 
   return (
@@ -57,7 +68,7 @@ const App = () => {
         />
         <Route
           path="/addpet"
-          element={user ? <AddPet user={user} /> : <Navigate to="/login" />}
+          element={user ? <AddPetForm addPet={addPet} user={user} /> : <Navigate to="/login" />}
         />
         <Route
           path="/appointments"
