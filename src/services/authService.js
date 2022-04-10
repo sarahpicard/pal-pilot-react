@@ -2,7 +2,6 @@ import * as tokenService from './tokenService'
 const BASE_URL = `${process.env.REACT_APP_BACKEND_SERVER_URL}/api/auth`
 
 async function signup(user) {
-  console.log("USER!!!!", user)
   try {
     const res = await fetch(`${BASE_URL}/register`, {
       method: 'POST',
