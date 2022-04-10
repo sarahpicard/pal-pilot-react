@@ -10,12 +10,9 @@ const NavBar = (props) => {
         <nav>
           <ul>
             <li><Link to="/" style={{ textDecoration: 'none' }}><FaPaw />Pal Pilot</Link></li>
-            <li><Link to="" onClick={props.handleLogout} style={{ textDecoration: 'none' }}>Log Out</Link></li>
-            <li><Link to="/changePassword" style={{ textDecoration: 'none' }}>Change Password</Link></li>
             <li><Link to="/pets" style={{ textDecoration: 'none' }}>My Pets</Link></li>
             <li><Link to="/addpet" style={{ textDecoration: 'none' }}>Add a New Pet</Link></li>
             <li><Link to="/appointments" style={{ textDecoration: 'none' }}>Appointments</Link></li>
-            <li><Link to="/myprofile" style={{ textDecoration: 'none' }}>My Profile</Link></li>
           </ul>
         </nav>
       :

@@ -1,0 +1,28 @@
+.li {
+  font-size: 15px;
+  margin-left: 15px;
+  display: inline-block;
+}
+.word_li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -41px;
+}
+.ul {
+  align-items: center;
+}
+.whole {
+  width: auto;
+  display: flexbox;
+  float: right;
+  background-color: #fde5d7;
+  margin-right: 70px;
+  border-radius: 70px;
+}
+.avatar {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
