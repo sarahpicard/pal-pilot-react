@@ -6,9 +6,9 @@ import styles from './NavBar.module.css'
 
 const NavBar = (props) => {
   return (
-    <>
+    <div className={styles.nav}>
       {props.user ?
-        <div className={styles.nav}>
+        <div>
           <ul>
             <li className={`${styles.li} ${styles.name}`}><Link to="/" className={styles.a}><FaPaw />Pal Pilot</Link></li>
             <li className={styles.li}><Link to="/pets" className={styles.a}>My Pets</Link></li>
@@ -25,7 +25,7 @@ const NavBar = (props) => {
           </ul>
         </div>
       }
-    </>
+    </div>
   )
 }
 
