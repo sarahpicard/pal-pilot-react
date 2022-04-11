@@ -13,12 +13,14 @@ import Appointments from './pages/Appointments/Appointments'
 import * as authService from './services/authService'
 import * as profileService from './services/profileService'
 import * as petService from './services/petService'
+import * as appointmentService from './services/appointmentService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [profiles, setProfiles] = useState([])
   const navigate = useNavigate()
   const [pets, setPets] = useState([])
+  const [appointments, setAppointments] = useState([])
 
   // use effect to get all profiles
   // useEffect(() => {
@@ -33,6 +35,14 @@ const App = () => {
     const fetchData = async () => {
       const data = await petService.getAll()
       setPets(data)
+    }
+    fetchData()
+  }, [])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await appointmentService.getAll()
+      setAppointments(data)
     }
     fetchData()
   }, [])
@@ -83,7 +93,7 @@ const App = () => {
         />
         <Route
           path="/appointments"
-          element={user ? <Appointments user={user} pets={pets} /> : <Navigate to="/login" />}
+          element={user ? <Appointments user={user} pets={pets} appointments={appointments} /> : <Navigate to="/login" />}
         />
         <Route
           path="/myprofile"
