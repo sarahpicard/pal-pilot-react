@@ -23,7 +23,11 @@ export const create = async (appointment) => {
 // see all appointments 
 export const getAll = async () => {
   try {
-    const res = await fetch(`${BASE_URL}`)
+    const res = await fetch(`${BASE_URL}`, {
+      headers: {
+        'Authorization': `Bearer ${tokenService.getToken()}`
+      }
+    })
     return await res.json()
   } catch (error) {
     console.log(error)
