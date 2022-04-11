@@ -13,7 +13,7 @@ const AddAppointmentForm = (props) => {
   // handle submitting new appointment form 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    id ? props.updateAppointment(form) : props.addAppointment(form)
+    id ? props.addAppointment(form) : props.addAppointment(form)
     navigate('/appointments')
   }
 
@@ -25,17 +25,17 @@ const AddAppointmentForm = (props) => {
   // useEffect for form
   useEffect(() => {
     const fetchOne = async () => {
-      const data = await getOne(id)
+      const appData = await getOne(id)
       setForm({
-        id: data.appointment.id,
-        name: data.appointment.name,
-        description: data.appointment.description,
-        address: data.appointment.address
+        id: appData.id,
+        name: appData.name,
+        description: appData.description,
+        address: appData.address
       })
     }
     id && fetchOne()
     return () => setForm({})
-  })
+  }, [id])
 
   return (
     <>

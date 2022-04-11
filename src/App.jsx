@@ -65,6 +65,12 @@ const App = () => {
     setPets([...pets, pet])
   }
 
+  // handle add appointment 
+  const addAppointment = async (appointmentData) => {
+    const appointment = await appointmentService.create(appointmentData)
+    setAppointments([...appointments, appointment])
+  }
+
 
   return (
     <>
@@ -93,7 +99,7 @@ const App = () => {
         />
         <Route
           path="/appointments"
-          element={user ? <Appointments user={user} pets={pets} appointments={appointments} /> : <Navigate to="/login" />}
+          element={user ? <Appointments user={user} pets={pets} appointments={appointments} addAppointment={addAppointment} /> : <Navigate to="/login" />}
         />
         <Route
           path="/myprofile"
