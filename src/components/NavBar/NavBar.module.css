@@ -11,9 +11,9 @@
   background-color: aquamarine;
   margin: 0;
   margin-top: -11px;
-  margin-right: 1rem;
   padding: 0;
-  width: 5rem;
+  width: 8rem;
   height: 100vh;
   float: left;
+  display: flex;
 }
