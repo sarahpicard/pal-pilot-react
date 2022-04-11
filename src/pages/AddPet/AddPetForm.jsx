@@ -32,7 +32,10 @@ const AddPetForm = (props) => {
         breed: data.pet.breed,
         animal_type: data.pet.animal_type,
         age: data.pet.age,
-        weight: data.pet.weight
+        weight: data.pet.weight,
+        // allergies: data.pet.allergies,
+        // medications: data.pet.medications,
+        // vaccines: data.pet.vaccines
       })
     }
     id && fetchOne()
@@ -43,7 +46,7 @@ const AddPetForm = (props) => {
     <>
       <h1>Add Pet Form</h1>
       <form onSubmit={handleSubmit}>
-        <AddPetInput form={form} handleChange={handleChange}/>
+        <AddPetInput form={form} handleChange={handleChange} />
         <button type='submit'>Submit</button>
       </form>
     </>

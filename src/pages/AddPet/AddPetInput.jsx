@@ -57,6 +57,39 @@ const AddPetInput = (props) => {
             name="weight"
             />
         </label>
+        {/* <label htmlFor="medications">Medication:
+          <input 
+            type="text" 
+            placeholder='medication'
+            autoComplete='off'
+            value={props.form.medications ? props.form.medications : ''}
+            onChange={props.handleChange}
+            id="medication"
+            name="medication"
+            />
+        </label>
+        <label htmlFor="vaccines">Vaccine:
+          <input 
+            type="text" 
+            placeholder='vaccine'
+            autoComplete='off'
+            value={props.form.vaccines ? props.form.vaccines : ''}
+            onChange={props.handleChange}
+            id="vaccine"
+            name="vaccine"
+            />
+        </label>
+        <label htmlFor="allergies">Allergy:
+          <input 
+            type="text" 
+            placeholder='allergy'
+            autoComplete='off'
+            value={props.form.allergy ? props.form.allergy : ''}
+            onChange={props.handleChange}
+            id="allergy"
+            name="weight"
+            />
+        </label> */}
     </>
   )
 }

@@ -21,12 +21,12 @@ const App = () => {
   const [pets, setPets] = useState([])
 
   // use effect to get all profiles
-  useEffect(() => {
-    if (user) {
-      profileService.getAllProfiles()
-        .then(allProfiles => setProfiles(allProfiles))
-    }
-  }, [user])
+  // useEffect(() => {
+  //   if (user) {
+  //     profileService.getAllProfiles()
+  //       .then(allProfiles => setProfiles(allProfiles))
+  //   }
+  // }, [user])
 
   // use effect to get all pets
   useEffect(() => {

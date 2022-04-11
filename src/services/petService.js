@@ -22,6 +22,7 @@ export const create = async (pet) => {
 // see all pets
 export const getAll = async () => {
   try {
+    console.log("base_url",BASE_URL)
     const res = await fetch(`${BASE_URL}`)
     return await res.json()
   } catch (error) {
