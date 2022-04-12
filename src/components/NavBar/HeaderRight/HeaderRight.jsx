@@ -10,9 +10,21 @@ const HeaderRight = (props) => {
           <div className={styles.whole}>
             <ul className={styles.ul}>
               <div className={styles.word_li}>
-                <li className={styles.li}><Link to="" onClick={props.handleLogout} style={{ textDecoration: 'none' }}>Log Out</Link></li>
-                <li className={styles.li}><Link to="/changePassword" style={{ textDecoration: 'none' }}>Change Password</Link></li>
-                <li className={styles.li}><Link to="/myprofile" style={{ textDecoration: 'none' }}>My Profile</Link></li>
+                <li className={styles.li}>
+                  <Link to="" onClick={props.handleLogout} style={{ textDecoration: 'none' }}>
+                    <span className={styles.span}>Log Out</span>
+                  </Link>
+                </li>
+                <li className={styles.li}>
+                  <Link to="/changePassword" style={{ textDecoration: 'none' }}>
+                    <span className={styles.span}>Change Password</span>
+                  </Link>
+                </li>
+                <li className={styles.li}>
+                  <Link to="/myprofile" style={{ textDecoration: 'none' }}>
+                    <span className={styles.span}>My Profile</span>
+                  </Link>
+                </li>
               </div>
               <li className={styles.li}>
                 <img src="https://i.imgur.com/Y5qHYjd.png" alt="avatar_image" className={styles.avatar}/>

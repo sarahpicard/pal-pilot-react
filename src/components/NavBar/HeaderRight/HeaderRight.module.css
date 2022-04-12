@@ -2,7 +2,6 @@
   font-size: 15px;
   margin-left: 15px;
   display: inline-block;
-  color: black;
 }
 .word_li {
   display: inline-block;
@@ -28,5 +27,11 @@
   width: 3rem;
   margin-right: 1rem;
   margin-left: 1rem;
+}
+
+.span {
+  color: black;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
 }
 
