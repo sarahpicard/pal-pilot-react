@@ -5,6 +5,8 @@ import { getOne } from '../../services/petService'
 
 import AddPetInput from './AddPetInput'
 
+import styles from './AddPetInput.module.css'
+
 const AddPetForm = (props) => {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -44,11 +46,13 @@ const AddPetForm = (props) => {
 
   return(
     <>
-      <h1>Add Pet Form</h1>
-      <form onSubmit={handleSubmit}>
-        <AddPetInput form={form} handleChange={handleChange} />
-        <button type='submit'>Submit</button>
-      </form>
+      <div>
+        <h1>Add Pet Form</h1>
+        <form onSubmit={handleSubmit}>
+          <AddPetInput form={form} handleChange={handleChange} />
+          <button className={styles.btn} type='submit'>Submit</button>
+        </form>
+      </div>
     </>
   )
 }

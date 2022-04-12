@@ -1,3 +1,4 @@
+import styles from './AddPetInput.module.css'
 
 const AddPetInput = (props) => {
   return (
@@ -11,6 +12,7 @@ const AddPetInput = (props) => {
             onChange={props.handleChange}
             id="name"
             name="name"
+            className={styles.input}
           />
         </label>
         <label htmlFor="breed">Breed:
@@ -22,6 +24,7 @@ const AddPetInput = (props) => {
             onChange={props.handleChange}
             id="breed"
             name="breed"
+            className={styles.input}
             />
         </label>
         <label htmlFor="animal_type">Animal Type:
@@ -33,6 +36,7 @@ const AddPetInput = (props) => {
             onChange={props.handleChange}
             id="animal_type"
             name="animal_type"
+            className={styles.input}
             />
         </label>
         <label htmlFor="age">Pet Age:
@@ -44,6 +48,7 @@ const AddPetInput = (props) => {
             onChange={props.handleChange}
             id="age"
             name="age"
+            className={styles.input}
             />
         </label>
         <label htmlFor="weight">Weight:
@@ -55,6 +60,7 @@ const AddPetInput = (props) => {
             onChange={props.handleChange}
             id="weight"
             name="weight"
+            className={styles.input}
             />
         </label>
         {/* <label htmlFor="medications">Medication:
