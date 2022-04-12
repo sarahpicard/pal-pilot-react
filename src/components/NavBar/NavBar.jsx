@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom'
 import { FaPaw } from 'react-icons/fa'
 import { FaSignInAlt } from 'react-icons/fa'
 import { FaUserPlus } from 'react-icons/fa'
+import { FaDog } from 'react-icons/fa'
+import { FaPlus } from 'react-icons/fa'
+import { FaRegCalendarAlt } from 'react-icons/fa'
 
 import styles from './NavBar.module.css'
 
@@ -13,11 +16,29 @@ const NavBar = (props) => {
         <div>
           <ul>
             <li className={styles.li}>
-              <Link to="/" className={styles.a}><FaPaw />Pal Pilot</Link>
+              <Link to="/" className={styles.a}>
+                <FaPaw className={styles.icon}/>
+                <span className={styles.span}>Pal Pilot</span>
+              </Link>
             </li>
-            <li className={styles.li}><Link to="/pets" className={styles.a}>My Pets</Link></li>
-            <li className={styles.li}><Link to="/addpet" className={styles.a}>Add a New Pet</Link></li>
-            <li className={styles.li}><Link to="/appointments" className={styles.a}>Appointments</Link></li>
+            <li className={styles.li}>
+              <Link to="/pets" className={styles.a}>
+                <FaDog className={styles.icon}/>
+                <span className={styles.span}>My Pets</span>
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link to="/addpet" className={styles.a}>
+                <FaPlus className={styles.icon}/>
+                <span className={styles.span}>Add a New Pet</span>
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link to="/appointments" className={styles.a}>
+                <FaRegCalendarAlt className={styles.icon}/>
+                <span className={styles.span}>Appointments</span>
+              </Link>
+            </li>
           </ul>
         </div>
       :
