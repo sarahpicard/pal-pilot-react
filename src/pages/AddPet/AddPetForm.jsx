@@ -46,8 +46,10 @@ const AddPetForm = (props) => {
 
   return(
     <>
-      <div>
-        <h1>Add Pet Form</h1>
+      <div className={styles.whole}>
+        <h1>Add A New Pet</h1>
+      </div>
+      <div className={styles.form}> 
         <form onSubmit={handleSubmit}>
           <AddPetInput form={form} handleChange={handleChange} />
           <button className={styles.btn} type='submit'>Submit</button>

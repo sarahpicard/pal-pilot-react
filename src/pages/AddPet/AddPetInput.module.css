@@ -1,3 +1,14 @@
+.whole {
+  display: flex;
+  padding-left: 8rem;
+  padding-top: 4rem;
+  width: 80%;
+}
+.form {
+  display: flex;
+  padding-left: 8rem;
+}
+
 .input {
   height: 40px;
   width: 200px;
