@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FaPaw } from 'react-icons/fa'
+import { FaSignInAlt } from 'react-icons/fa'
+import { FaUserPlus } from 'react-icons/fa'
 
 import styles from './NavBar.module.css'
 
@@ -10,7 +12,9 @@ const NavBar = (props) => {
       {props.user ?
         <div>
           <ul>
-            <li className={styles.li}><Link to="/" className={styles.a}><FaPaw />Pal Pilot</Link></li>
+            <li className={styles.li}>
+              <Link to="/" className={styles.a}><FaPaw />Pal Pilot</Link>
+            </li>
             <li className={styles.li}><Link to="/pets" className={styles.a}>My Pets</Link></li>
             <li className={styles.li}><Link to="/addpet" className={styles.a}>Add a New Pet</Link></li>
             <li className={styles.li}><Link to="/appointments" className={styles.a}>Appointments</Link></li>
@@ -19,9 +23,24 @@ const NavBar = (props) => {
       :
         <div className={styles.nav}>
           <ul>
-            <li className={styles.li}><Link to="/" className={styles.a}><FaPaw />Pal Pilot</Link></li>
-            <li className={styles.li}><Link to="/login" className={styles.a}>Log In</Link></li>
-            <li className={styles.li}><Link to="/signup" className={styles.a}>Sign Up</Link></li>
+            <li className={styles.li}>
+              <Link to="/" className={styles.a}>
+                <FaPaw className={styles.icon}/>
+                <span className={styles.span}>Pal Pilot</span>
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link to="/login" className={styles.a}>
+                <FaSignInAlt className={styles.icon}/>
+                <span className={styles.span}>Log In</span>
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link to="/signup" className={styles.a}>
+                <FaUserPlus className={styles.icon}/>
+                <span className={styles.span}>Sign Up</span>
+              </Link>
+            </li>
           </ul>
         </div>
       }
