@@ -9,8 +9,44 @@
 .label,
 .button {
   margin-right: 0.5rem;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .inputContainer {
   margin-bottom: 1rem;
+}
+
+.input {
+  height: 40px;
+  width: 200px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: #e8f7fc;
+  border-radius: 70px;
+  text-indent: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+}
+
+.btn {
+  height: 38px;
+  width: 90px;
+  background-color: #bae7f6;
+  border: none;
+  border-radius: 70px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.btn:hover {
+  background-color: #8dd7f0;
+  transition: all .3s ease-in-out;
 }

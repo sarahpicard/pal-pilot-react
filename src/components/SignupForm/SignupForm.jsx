@@ -55,7 +55,7 @@ const SignupForm = props => {
       className={styles.container}
     >
       <div className={styles.inputContainer}>
-        <label htmlFor="name" className={styles.label}>Name</label>
+        <label htmlFor="name" className={styles.label}>Name:</label>
         <input
           type="text"
           autoComplete="off"
@@ -63,33 +63,39 @@ const SignupForm = props => {
           value={name}
           name="name"
           onChange={handleChange}
+          placeholder="name"
+          className={styles.input}
         />
       </div>
       <div className={styles.inputContainer}>
-        <label htmlFor="email" className={styles.label}>Email</label>
+        <label htmlFor="email" className={styles.label}>Email:</label>
         <input
           type="text"
           autoComplete="off"
           id="email"
           value={email}
           name="email"
+          placeholder='email'
           onChange={handleChange}
+          className={styles.input}
         />
       </div>
       <div className={styles.inputContainer}>
-        <label htmlFor="password" className={styles.label}>Password</label>
+        <label htmlFor="password" className={styles.label}>Password:</label>
         <input
           type="password"
           autoComplete="off"
           id="password"
           value={password}
           name="password"
+          placeholder='password'
           onChange={handleChange}
+          className={styles.input}
         />
       </div>
       <div className={styles.inputContainer}>
         <label htmlFor="confirm" className={styles.label}>
-          Confirm Password
+          Confirm Password:
         </label>
         <input
           type="password"
@@ -97,10 +103,12 @@ const SignupForm = props => {
           id="confirm"
           value={passwordConf}
           name="passwordConf"
+          placeholder='confirm password'
           onChange={handleChange}
+          className={styles.input}
         />
       </div>
-      <div className={styles.inputContainer}>
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="photo-upload" className="form-label">
           Upload Photo
         </label>
@@ -110,13 +118,13 @@ const SignupForm = props => {
           name="photo"
           onChange={handleChangePhoto}
         />
-      </div>
+      </div> */}
       <div className={styles.inputContainer}>
-        <button disabled={isFormInvalid()} className={styles.button}>
+        <button disabled={isFormInvalid()} className={`${styles.button} ${styles.btn}`}>
           Sign Up
         </button>
         <Link to="/">
-          <button>Cancel</button>
+          <button className={styles.btn}>Cancel</button>
         </Link>
       </div>
     </form>
