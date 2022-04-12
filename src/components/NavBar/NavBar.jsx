@@ -11,33 +11,41 @@ import styles from './NavBar.module.css'
 
 const NavBar = (props) => {
   return (
-    <div className={styles.nav}>
+    <div >
       {props.user ?
-        <div>
+        <div className={styles.nav}>
           <ul>
             <li className={styles.li}>
-              <Link to="/" className={styles.a}>
-                <FaPaw className={styles.icon}/>
-                <span className={styles.span}>Pal Pilot</span>
-              </Link>
+              <div className={styles.div}>
+                <Link to="/" className={styles.a}>
+                  <FaPaw className={styles.icon}/>
+                  <span className={styles.span}>Pal Pilot</span>
+                </Link>
+              </div>
             </li>
             <li className={styles.li}>
-              <Link to="/pets" className={styles.a}>
-                <FaDog className={styles.icon}/>
-                <span className={styles.span}>My Pets</span>
-              </Link>
+              <div className={styles.div}>
+                <Link to="/pets" className={styles.a}>
+                    <FaDog className={styles.icon}/>
+                    <span className={styles.span}>My Pets</span>
+                </Link>
+              </div>
             </li>
             <li className={styles.li}>
-              <Link to="/addpet" className={styles.a}>
-                <FaPlus className={styles.icon}/>
-                <span className={styles.span}>Add Pet</span>
-              </Link>
+              <div className={styles.div}>
+                <Link to="/addpet" className={styles.a}>
+                  <FaPlus className={styles.icon}/>
+                  <span className={styles.span}>Add Pet</span>
+                </Link>
+              </div>
             </li>
             <li className={styles.li}>
-              <Link to="/appointments" className={styles.a}>
-                <FaRegCalendarAlt className={styles.icon}/>
-                <span className={`${styles.span} ${styles.appointment}`}>Appointments</span>
-              </Link>
+              <div className={styles.div}>
+                <Link to="/appointments" className={styles.a}>
+                  <FaRegCalendarAlt className={styles.icon}/>
+                  <span className={`${styles.span} ${styles.appointment}`}>Appointments</span>
+                </Link>
+              </div>
             </li>
           </ul>
         </div>
@@ -45,22 +53,28 @@ const NavBar = (props) => {
         <div className={styles.nav}>
           <ul>
             <li className={styles.li}>
-              <Link to="/" className={styles.a}>
-                <FaPaw className={styles.icon}/>
-                <span className={styles.span}>Pal Pilot</span>
-              </Link>
+              <div className={styles.div}>
+                <Link to="/" className={styles.a}>
+                  <FaPaw className={styles.icon}/>
+                  <span className={styles.span}>Pal Pilot</span>
+                </Link>
+              </div>
             </li>
             <li className={styles.li}>
-              <Link to="/login" className={styles.a}>
-                <FaSignInAlt className={styles.icon}/>
-                <span className={styles.span}>Log In</span>
-              </Link>
+              <div className={styles.div}>
+                <Link to="/login" className={styles.a}>
+                  <FaSignInAlt className={styles.icon}/>
+                  <span className={styles.span}>Log In</span>
+                </Link>
+              </div>
             </li>
             <li className={styles.li}>
-              <Link to="/signup" className={styles.a}>
-                <FaUserPlus className={styles.icon}/>
-                <span className={styles.span}>Sign Up</span>
-              </Link>
+              <div className={styles.div}>
+                <Link to="/signup" className={styles.a}>
+                  <FaUserPlus className={styles.icon}/>
+                  <span className={styles.span}>Sign Up</span>
+                </Link>
+              </div>
             </li>
           </ul>
         </div>
