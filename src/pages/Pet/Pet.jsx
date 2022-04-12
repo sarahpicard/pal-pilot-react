@@ -19,7 +19,13 @@ const Pet = (props) => {
 
   return (
     <>
-      <h1>I'm one pet</h1>
+      <h1>{pet.name}</h1>
+      <h5>Breed: {pet.breed}</h5>
+      <p>Age: {pet.age}</p>
+      <p>Weight: {pet.weight}</p>
+      <p>{pet.medications.length ? pet.medications : 'no medications'}</p>
+      <p>{pet.vaccines.length ? pet.vaccines : 'no vaccines'}</p>
+      <p>{pet.allergies.length ? pet.allergies : 'no allergies'}</p>
     </>
   )
 }
