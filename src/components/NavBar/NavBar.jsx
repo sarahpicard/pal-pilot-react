@@ -30,13 +30,13 @@ const NavBar = (props) => {
             <li className={styles.li}>
               <Link to="/addpet" className={styles.a}>
                 <FaPlus className={styles.icon}/>
-                <span className={styles.span}>Add a New Pet</span>
+                <span className={styles.span}>Add Pet</span>
               </Link>
             </li>
             <li className={styles.li}>
               <Link to="/appointments" className={styles.a}>
                 <FaRegCalendarAlt className={styles.icon}/>
-                <span className={styles.span}>Appointments</span>
+                <span className={`${styles.span} ${styles.appointment}`}>Appointments</span>
               </Link>
             </li>
           </ul>

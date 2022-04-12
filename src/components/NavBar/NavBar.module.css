@@ -4,8 +4,6 @@
   align-items: center;
   height: 5rem;
   margin-top: 20px;
-  /* font size */
-  /* font family */
 }
 
 .a {
@@ -25,9 +23,25 @@
   flex-direction: column;
   align-items: left;
 }
+.nav:hover {
+  width: 14rem;
+}
+.nav:hover .span {
+  display: inline-block;
+}
 
 .span {
   display: none;
+  margin-left: 25px;
+  font-size: 25px;
+  color: black;
+}
+.span:hover {
+  color: #ee7f43;
+}
+.appointment {
+  font-size: 18px;
+  margin-left: 17px;
 }
 
 .icon {
