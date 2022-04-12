@@ -6,3 +6,18 @@
   padding: 1rem;
   margin: 1rem;
 }
+
+.trash {
+  display: flex;
+  position: relative;
+  float: right;
+}
+.trash:hover {
+  color: #ee7f43;
+  cursor: pointer;  
+}
+.delete {
+  border: none;
+  background-color: #fef7f3;
+  cursor: pointer;
+}

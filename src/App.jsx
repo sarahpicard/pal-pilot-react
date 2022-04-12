@@ -71,6 +71,11 @@ const App = () => {
     setAppointments([...appointments, appointment])
   }
 
+  // handle delete appointment 
+  const deleteAppointment = async (id) => {
+    await appointmentService.deleteOne(id)
+    setAppointments(appointments.filter(appointment => appointment.id !== parseInt(id)))
+  }
 
   return (
     <>
@@ -99,7 +104,7 @@ const App = () => {
         />
         <Route
           path="/appointments"
-          element={user ? <Appointments user={user} pets={pets} appointments={appointments} addAppointment={addAppointment} /> : <Navigate to="/login" />}
+          element={user ? <Appointments user={user} pets={pets} appointments={appointments} addAppointment={addAppointment} deleteAppointment={deleteAppointment} /> : <Navigate to="/login" />}
         />
         <Route
           path="/myprofile"
