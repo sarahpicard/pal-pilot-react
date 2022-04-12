@@ -3,6 +3,7 @@
   width: 900px;
   margin-top: -6rem;
   margin-right: -100px;
+  z-index: -5;
 }
 .container {
   display: flex;
