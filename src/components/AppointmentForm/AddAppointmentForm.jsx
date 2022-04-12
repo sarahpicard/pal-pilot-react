@@ -5,6 +5,8 @@ import { getOne } from '../../services/appointmentService'
 
 import AddAppointmentInput from './AddAppointmentInput'
 
+import styles from './AddAppointmentInput.module.css'
+
 const AddAppointmentForm = (props) => {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -39,10 +41,12 @@ const AddAppointmentForm = (props) => {
 
   return (
     <>
-      <h1>Appointment Form</h1>
+      <h4>Add A New Appointment:</h4>
       <form onSubmit={handleSubmit}>
         <AddAppointmentInput form={form} handleChange={handleChange} />
-        <button type='submit'>Submit</button>
+        <button type='submit' className={styles.btn}>
+            Submit
+        </button>
       </form>
     </>
   )

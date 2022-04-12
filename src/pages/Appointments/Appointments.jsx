@@ -3,17 +3,20 @@ import { useState } from 'react'
 import AddAppointmentForm from '../../components/AppointmentForm/AddAppointmentForm'
 import AppointmentCard from '../../components/AppointmentCard/AppointmentCard'
 
+import styles from './Appointments.module.css'
+
 const Appointments = (props) => {
   return (
-    <>
-      <h1>this is the appointments page</h1>
-      <AddAppointmentForm addAppointment={props.addAppointment} />
-      <section>
+    <div>
+      <div className={styles.appForm}>
+        <AddAppointmentForm addAppointment={props.addAppointment} />
+      </div>
+      <section className={styles.appSection}>
         {props.appointments.map((appointment) => (
           <AppointmentCard appointment={appointment} key={appointment.id}/>
         ))}
       </section>
-    </>
+    </div>
   )
 }
 

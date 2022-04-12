@@ -1,0 +1,28 @@
+.input {
+  height: 40px;
+  width: 200px;
+  margin-right: 2rem;
+  border: none;
+  background-color: #e8f7fc;
+  border-radius: 70px;
+  text-indent: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+}
+.btn {
+  height: 38px;
+  width: 90px;
+  background-color: #bae7f6;
+  border: none;
+  border-radius: 70px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+}
+.btn:hover {
+  background-color: #8dd7f0;
+  transition: all .3s ease-in-out;
+}

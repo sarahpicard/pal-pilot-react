@@ -19,6 +19,8 @@
   background-color: #fde5d7;
   margin-right: 2%;
   border-radius: 70px;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .avatar {

@@ -17,7 +17,7 @@
   margin-top: -25px;
   padding: 0;
   width: 6.5rem;
-  height: 100vh;
+  height: 105vh;
   float: left;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@
   transition: width 300ms ease;
   font-family: 'League Spartan', sans-serif;
   font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .nav:hover {

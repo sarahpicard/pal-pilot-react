@@ -1,3 +1,5 @@
+import styles from './AddAppointmentInput.module.css'
+
 const AddAppointmentInput = (props) => {
   return (
     <>
@@ -10,6 +12,7 @@ const AddAppointmentInput = (props) => {
           onChange={props.handleChange}
           id="name"
           name="name"
+          className={styles.input}
         />
       </label>
       <label htmlFor="description">
@@ -21,6 +24,7 @@ const AddAppointmentInput = (props) => {
           onChange={props.handleChange}
           id="description"
           name="description"
+          className={styles.input}
         />
       </label>
       <label htmlFor="address">
@@ -32,6 +36,7 @@ const AddAppointmentInput = (props) => {
           onChange={props.handleChange}
           id="address"
           name="address"
+          className={styles.input}
         />
       </label>
     </>
