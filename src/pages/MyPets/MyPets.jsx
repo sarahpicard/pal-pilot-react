@@ -7,9 +7,8 @@ import styles from './MyPets.module.css'
 const MyPets = (props) => {
   return (
     <div>
-      <h1>These are all of my pets</h1>
         {/* {props.user.id === props.pets.profile_id ? */}
-          <section>
+          <section className={styles.section}>
             {props.pets.map((pet) => (
               <PetCard pet={pet} key={pet.id} />
             ))}

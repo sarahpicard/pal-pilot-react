@@ -16,7 +16,7 @@ const PetCard = (props) => {
         <div className={styles.card}>
           <div className={`${styles.front} ${styles.cardFace}`}>
             <h2>{props.pet.name}</h2>
-            <img src="https://i.imgur.com/11OvKIB.jpg" alt="puppy" style={{ "width": "100px", "height": "100px"}}/>
+            <img src="https://i.imgur.com/sflSwK0.png" alt="puppy" style={{ "width": "100px", "height": "100px"}}/>
           </div>
           <div className={`${styles.back} ${styles.cardFace}`}>
             <p>{props.pet.animal_type}</p>
