@@ -9,6 +9,7 @@ import MyPets from './pages/MyPets/MyPets'
 import AddPetForm from './pages/AddPet/AddPetForm'
 import MyProfile from './pages/MyProfile/MyProfile'
 import Appointments from './pages/Appointments/Appointments'
+import Pet from './pages/Pet/Pet'
 
 import * as authService from './services/authService'
 import * as profileService from './services/profileService'
@@ -97,6 +98,10 @@ const App = () => {
         <Route
           path="/pets"
           element={user ? <MyPets user={user} pets={pets} /> : <Navigate to="/login" />}
+        />
+        <Route
+          path='/pets/:id' 
+          element={user ? <Pet user={user} /> : <Navigate to='/login' /> } 
         />
         <Route
           path="/addpet"

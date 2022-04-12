@@ -12,8 +12,6 @@ const Appointments = (props) => {
         <AddAppointmentForm addAppointment={props.addAppointment} />
       </div>
       <section className={styles.appSection}>
-        {console.log("delete appointment", props.deleteAppointment)}
-        {console.log("appointment id", props.appointments)}
         {props.appointments.map((appointment) => (
           <AppointmentCard 
             appointment={appointment} 

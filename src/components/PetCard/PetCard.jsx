@@ -4,14 +4,9 @@ import { useState } from 'react'
 import styles from './PetCard.module.css'
 
 const PetCard = (props) => {
-  const [isActive, setActive] = useState("false")
-
-  const handleToggle = () => {
-    setActive(!isActive);
-  }
-
   return (
     <>
+    <Link to={`/pets/${props.pet.id}`}>
       <div className={styles.whole}>
         <div className={styles.card}>
           <div className={`${styles.front} ${styles.cardFace}`}>
@@ -26,6 +21,7 @@ const PetCard = (props) => {
           </div>
         </div>
       </div>
+    </Link>
     </>
   )
 }
