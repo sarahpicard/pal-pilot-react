@@ -1,7 +1,12 @@
 .appForm, .appSection {
-  padding-left: 15rem;
   font-family: 'League Spartan', sans-serif;
 }
 .appForm {
-  padding-top: 5rem;
+  padding-top: 8rem;
+  padding-left: 10rem;
+  display: flex;
+}
+.appSection {
+  display: flex;
+  padding-left: 9rem;
 }

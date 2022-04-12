@@ -1,7 +1,10 @@
 .input {
   height: 40px;
   width: 200px;
-  margin-right: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 2rem;
   border: none;
   background-color: #e8f7fc;
   border-radius: 70px;
@@ -22,6 +25,7 @@
   font-family: 'Libre Baskerville', serif;
   font-size: 12px;
   cursor: pointer;
+  margin-left: 1rem;
 }
 .btn:hover {
   background-color: #8dd7f0;
