@@ -1,0 +1,11 @@
+.img {
+  height: 800px;
+  width: 900px;
+  margin-top: -6rem;
+  margin-right: -100px;
+}
+.container {
+  display: flex;
+  padding-left: 10rem;
+  padding-top: 5rem;
+}

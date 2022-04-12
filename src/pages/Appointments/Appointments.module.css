@@ -9,4 +9,5 @@
 .appSection {
   display: flex;
   padding-left: 9rem;
+  flex-wrap: wrap;
 }
