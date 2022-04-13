@@ -31,8 +31,26 @@ const VaccineForm = (props) => {
             onChange={handleChange}
             className={styles.input}
           />
-          <button type='submit' className={styles.btn}>Submit</button>
-        </label>
+        </label><br />
+        <label htmlFor="vaccine last">
+          <input 
+            type="datetime-local" 
+            onChange={handleChange}
+            value={form.last_shot ? form.last_shot: ''}
+            className={styles.input}
+            name='last_shot'
+          />
+        </label><br />
+        <label htmlFor="vaccine next">
+          <input 
+            type="datetime-local" 
+            onChange={handleChange}
+            value={form.next_shot ? form.next_shot: ''}
+            className={styles.input}
+            name='next_shot'
+          />
+        </label><br />
+        <button type='submit' className={styles.btn}>Submit</button>
       </form>
     </>
   )

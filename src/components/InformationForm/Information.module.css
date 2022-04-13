@@ -30,3 +30,10 @@
   background-color: #8dd7f0;
   transition: all .3s ease-in-out;
 }
+
+.table {
+  width: 27rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
