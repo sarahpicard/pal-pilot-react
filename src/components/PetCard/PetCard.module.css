@@ -1,8 +1,8 @@
 .whole {
   perspective: 40rem;
   display: flex;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 330px;
   background-color: #e8f7fc;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin: 1rem;
@@ -31,4 +31,12 @@
 }
 .arrow {
   height: 15px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.h1 {
+  font-size: 40px;
+  margin-bottom: 0.6rem;
 }

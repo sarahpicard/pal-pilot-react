@@ -9,12 +9,12 @@ const PetCard = (props) => {
 
   return (
     <>
-    <Link to={`/pets/${props.pet.id}`}>
+    <Link to={`/pets/${props.pet.id}`} className={styles.link}>
       <div className={styles.whole}>
         <div className={styles.card}>
           <div className={`${styles.front} ${styles.cardFace}`}>
-            <h2>{props.pet.name}</h2>
-            <img src={props.images[idx]} alt="pe" style={{ "width": "100px", "height": "100px"}}/><br />
+            <h1 className={styles.h1}>{props.pet.name}</h1>
+            <img src={props.images[idx]} alt="pet" style={{ "width": "150px", "height": "150px"}}/><br />
             <FaArrowCircleDown className={styles.arrow}/>
           </div>
           <div className={`${styles.back} ${styles.cardFace}`}>
