@@ -17,7 +17,7 @@ const Landing = ({ user, pets }) => {
             <button className={styles.btn} onClick={() => navigate(`/addpet`)}>Add a New Pet!</button><br />
           </div>
           :
-          <p></p>
+            <button className={styles.btn} onClick={() => navigate(`/signup`)}>Signup Now!</button>
           }
         </div>
         <img src="https://i.imgur.com/AeOZOiU.png" alt="people walking dog" className={styles.img}/>
