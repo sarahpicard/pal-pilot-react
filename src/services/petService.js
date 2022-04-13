@@ -104,6 +104,7 @@ export const addMedication = async (id, data) => {
   }
 }
 
+
 // add vaccine
 export const addVaccine = async (id, data) => {
   try {
