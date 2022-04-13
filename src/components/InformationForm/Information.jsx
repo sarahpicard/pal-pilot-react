@@ -1,3 +1,4 @@
+import AllergyForm from "./AllergyForm"
 import MedicationForm from "./MedicationForm"
 import VaccineForm from "./VaccineForm"
 
@@ -42,6 +43,7 @@ const Information = (props) => {
         <p>This pet has no vaccines</p>
         }
       </div>
+      <AllergyForm pet={props.pet} user={props.user}/>
       <div>
         {props.pet.allergies.length ?
           <table>
