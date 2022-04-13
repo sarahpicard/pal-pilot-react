@@ -14,7 +14,7 @@ const AddPetInput = (props) => {
             name="name"
             className={styles.input}
           />
-        </label>
+        </label><br />
         <label htmlFor="breed">Breed:
           <input 
             type="text" 
@@ -26,7 +26,7 @@ const AddPetInput = (props) => {
             name="breed"
             className={styles.input}
             />
-        </label>
+        </label><br />
         <label htmlFor="animal_type">Animal Type:
           <input 
             type="text" 
@@ -38,7 +38,7 @@ const AddPetInput = (props) => {
             name="animal_type"
             className={styles.input}
             />
-        </label>
+        </label><br />
         <label htmlFor="age">Pet Age:
           <input 
             type="text" 
@@ -50,7 +50,7 @@ const AddPetInput = (props) => {
             name="age"
             className={styles.input}
             />
-        </label>
+        </label><br />
         <label htmlFor="weight">Weight:
           <input 
             type="text" 
@@ -62,43 +62,7 @@ const AddPetInput = (props) => {
             name="weight"
             className={styles.input}
             />
-        </label>
-        {/* <label htmlFor="medications">Medication:
-          <input 
-            type="text" 
-            placeholder='medication'
-            autoComplete='off'
-            value={props.form.medication ? props.form.medication : ''}
-            onChange={props.handleChange}
-            id="medication"
-            name="medication"
-            className={styles.input}
-            />
-        </label>
-        <label htmlFor="vaccines">Vaccine:
-          <input 
-            type="text" 
-            placeholder='vaccine'
-            autoComplete='off'
-            value={props.form.vaccine ? props.form.vaccine : ''}
-            onChange={props.handleChange}
-            id="vaccine"
-            name="vaccine"
-            className={styles.input}
-            />
-        </label>
-        <label htmlFor="allergies">Allergy:
-          <input 
-            type="text" 
-            placeholder='allergy'
-            autoComplete='off'
-            value={props.form.allergy ? props.form.allergy : ''}
-            onChange={props.handleChange}
-            id="allergy"
-            name="allergy"
-            className={styles.input}
-            />
-        </label> */}
+        </label><br />
     </>
   )
 }

@@ -1,12 +1,13 @@
 .whole {
   display: flex;
-  padding-left: 8rem;
-  padding-top: 4rem;
-  width: 80%;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1rem;
 }
 .form {
   display: flex;
-  padding-left: 8rem;
+  flex-direction: column;
+  text-align: center;
 }
 
 .input {

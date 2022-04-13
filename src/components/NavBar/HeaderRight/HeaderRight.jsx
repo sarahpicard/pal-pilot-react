@@ -15,11 +15,6 @@ const HeaderRight = (props) => {
                     <span className={styles.span}>Log Out</span>
                   </Link>
                 </li>
-                <li className={styles.li}>
-                  <Link to="/myprofile" style={{ textDecoration: 'none' }}>
-                    <span className={styles.span}>My Profile</span>
-                  </Link>
-                </li>
               </div>
               <li className={styles.li}>
                 <img src="https://i.imgur.com/Y5qHYjd.png" alt="avatar_image" className={styles.avatar}/>
