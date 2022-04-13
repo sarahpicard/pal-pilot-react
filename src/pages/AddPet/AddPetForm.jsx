@@ -47,7 +47,11 @@ const AddPetForm = (props) => {
   return(
     <>
       <div className={styles.whole}>
+        {id ? 
+        <h1>Edit Your Pet</h1>
+        :
         <h1>Add A New Pet</h1>
+      }
       </div>
       <div className={styles.form}> 
         <form onSubmit={handleSubmit}>

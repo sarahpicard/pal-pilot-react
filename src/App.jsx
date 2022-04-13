@@ -66,6 +66,14 @@ const App = () => {
     setPets([...pets, pet])
   }
 
+  // handle update pet
+  const updatePet = async (petData) => {
+    const updatedPet = await petService.update(petData)
+    setPets(pets.map((pet) => (
+      pet.id === updatedPet.id ? updatedPet : pet
+    )))
+  }
+
   // handle add appointment 
   const addAppointment = async (appointmentData) => {
     const appointment = await appointmentService.create(appointmentData)
@@ -102,6 +110,10 @@ const App = () => {
         <Route
           path='/pets/:id' 
           element={user ? <Pet user={user} /> : <Navigate to='/login' /> } 
+        />
+        <Route 
+          path='/pets/:id/edit'
+          element={user ? <AddPetForm user={user} pets={pets} updatePet={updatePet} /> : <Navigate to='/login' />}
         />
         <Route
           path="/addpet"

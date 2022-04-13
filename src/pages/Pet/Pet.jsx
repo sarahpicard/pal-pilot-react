@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
 import { getOne } from '../../services/petService'
 
@@ -8,6 +8,7 @@ import styles from './Pet.module.css'
 const Pet = (props) => {
   const { id } = useParams()
   const [pet, setPet] = useState(null)
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchOne = async () => {
@@ -31,6 +32,7 @@ const Pet = (props) => {
           {/* <p>{pet.medications.length ? pet.medications : 'no medications'}</p>
           <p>{pet.vaccines.length ? pet.vaccines : 'no vaccines'}</p>
           <p>{pet.allergies.length ? pet.allergies : 'no allergies'}</p> */}
+          <button type='submit' onClick={() => navigate(`/pets/${pet.id}/edit`, { state: pet })}>Update</button>
         </div>
       </div>
     </>
