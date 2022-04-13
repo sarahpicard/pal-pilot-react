@@ -1,6 +1,10 @@
 import styles from './Landing.module.css'
 
-const Landing = ({ user }) => {
+import { Navigator, useNavigate } from 'react-router-dom'
+
+const Landing = ({ user, pets }) => {
+  const navigate = useNavigate()
+
   return (
     <>
       <main className={styles.container}>
@@ -10,8 +14,7 @@ const Landing = ({ user }) => {
           <p className={styles.p}>Pal parents can manage basic pet information, including weight, age, vaccinations, medications, allergies, and appointments for their pets!</p>
           {user ? 
           <div>
-            <button className={styles.btn}>Add a New Pet!</button><br />
-            <button className={styles.btn}>See All of My Pets!</button>
+            <button className={styles.btn} onClick={() => navigate(`/addpet`)}>Add a New Pet!</button><br />
           </div>
           :
           <p></p>
