@@ -8,7 +8,7 @@ const MyPets = (props) => {
         {/* {props.user.id === props.pets.profile_id ? */}
           <section className={styles.section}>
             {props.pets.map((pet) => (
-              <PetCard pet={pet} key={pet.id} />
+              <PetCard pet={pet} key={pet.id} images={props.images} />
             ))}
           </section>
         {/* : */}

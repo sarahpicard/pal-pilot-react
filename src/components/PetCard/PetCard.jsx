@@ -4,6 +4,9 @@ import { FaArrowCircleDown } from 'react-icons/fa'
 import styles from './PetCard.module.css'
 
 const PetCard = (props) => {
+
+  const idx = Math.floor(Math.random() * (props.images.length))
+
   return (
     <>
     <Link to={`/pets/${props.pet.id}`}>
@@ -11,7 +14,7 @@ const PetCard = (props) => {
         <div className={styles.card}>
           <div className={`${styles.front} ${styles.cardFace}`}>
             <h2>{props.pet.name}</h2>
-            <img src="https://i.imgur.com/sflSwK0.png" alt="puppy" style={{ "width": "100px", "height": "100px"}}/><br />
+            <img src={props.images[idx]} alt="pe" style={{ "width": "100px", "height": "100px"}}/><br />
             <FaArrowCircleDown className={styles.arrow}/>
           </div>
           <div className={`${styles.back} ${styles.cardFace}`}>

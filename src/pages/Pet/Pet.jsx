@@ -12,6 +12,8 @@ const Pet = (props) => {
   const [pet, setPet] = useState(null)
   const navigate = useNavigate()
 
+  const idx = Math.floor(Math.random() * (props.images.length))
+
   useEffect(() => {
     const fetchOne = async () => {
       const data = await getOne(id)
@@ -27,7 +29,7 @@ const Pet = (props) => {
       <div className={styles.div}>
         <div className={styles.whole}>
           <h1>{pet.name ? pet.name : 'no name'}</h1>
-          <img src="https://i.imgur.com/sflSwK0.png" alt="puppy_picture" style={{ "width": "300px", "height": "300px"}}/>
+          <img src={props.images[idx]} alt="puppy_picture" style={{ "width": "300px", "height": "300px"}}/>
           <h5>Breed: {pet.breed ? pet.breed : 'no breed'}</h5>
           <p>Age: {pet.age ? pet.age : 'no age'}</p>
           <p>Weight: {pet.weight ? pet.weight : 'no weight'}</p>

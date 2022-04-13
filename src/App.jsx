@@ -15,11 +15,23 @@ import * as authService from './services/authService'
 import * as petService from './services/petService'
 import * as appointmentService from './services/appointmentService'
 
+import catOne from './assets/cat1.png'
+import catTwo from './assets/cat2.png'
+import catThree from './assets/cat3.png'
+import dogOne from './assets/dog1.png'
+import dogTwo from './assets/dog2.png'
+import dogThree from './assets/dog3.png'
+import dogFour from './assets/dog4.png'
+
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const navigate = useNavigate()
   const [pets, setPets] = useState([])
   const [appointments, setAppointments] = useState([])
+
+  const images = [
+    catOne, catTwo, catThree, dogOne, dogTwo, dogThree, dogFour
+  ]
 
   // use effect to get all profiles
   // useEffect(() => {
@@ -103,11 +115,11 @@ const App = () => {
         />
         <Route
           path="/pets"
-          element={user ? <MyPets user={user} pets={pets} /> : <Navigate to="/login" />}
+          element={user ? <MyPets user={user} pets={pets} images={images} /> : <Navigate to="/login" />}
         />
         <Route
           path='/pets/:id' 
-          element={user ? <Pet user={user} /> : <Navigate to='/login' /> } 
+          element={user ? <Pet user={user} images={images} /> : <Navigate to='/login' /> } 
         />
         <Route 
           path='/pets/:id/edit'
