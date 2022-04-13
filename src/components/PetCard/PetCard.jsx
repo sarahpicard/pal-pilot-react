@@ -18,8 +18,8 @@ const PetCard = (props) => {
             <FaArrowCircleDown className={styles.arrow}/>
           </div>
           <div className={`${styles.back} ${styles.cardFace}`}>
-            <p>{props.pet.animal_type}</p>
-            <p>{props.pet.breed}</p>
+            <p>Animal: {props.pet.animal_type}</p>
+            <p>Breed: {props.pet.breed}</p>
             <p>Age: {props.pet.age}</p>
             <p>Weight: {props.pet.weight}</p>
           </div>
