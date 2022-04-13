@@ -32,7 +32,7 @@ const Pet = (props) => {
           {/* <p>{pet.medications.length ? pet.medications : 'no medications'}</p>
           <p>{pet.vaccines.length ? pet.vaccines : 'no vaccines'}</p>
           <p>{pet.allergies.length ? pet.allergies : 'no allergies'}</p> */}
-          <button type='submit' onClick={() => navigate(`/pets/${pet.id}/edit`, { state: pet })}>Update</button>
+          <button className={styles.btn} type='submit' onClick={() => navigate(`/pets/${pet.id}/edit`, { state: pet })}>Update</button>
         </div>
       </div>
     </>
