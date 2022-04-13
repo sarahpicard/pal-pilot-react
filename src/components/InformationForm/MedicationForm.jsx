@@ -3,7 +3,7 @@ import { useState } from 'react'
 // import service here
 import { addMedication } from '../../services/petService'
 
-const InformationForm = (props) => {
+const MedicationForm = (props) => {
   const [form, setForm] = useState({})
 
   const addToMedication = async (e) => {
@@ -36,4 +36,4 @@ const InformationForm = (props) => {
   )
 }
 
-export default InformationForm
+export default MedicationForm
