@@ -1,22 +1,8 @@
-.whole {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 1rem;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .input {
   height: 40px;
   width: 200px;
-  margin-right: 1rem;
-  margin-left: 1rem;
   margin-top: 0.1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   border: none;
   background-color: #e8f7fc;
   border-radius: 70px;

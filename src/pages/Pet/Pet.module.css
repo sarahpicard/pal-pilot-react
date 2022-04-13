@@ -1,15 +1,17 @@
 .div {
   display: flex;
-  margin-left: 10rem;
   padding-top: 3rem;
 }
 .whole {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   height: 40rem;
   width: 40rem;
   background-color: #fef7f3;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: 1rem;
-  margin: 1rem;
+  margin-left: 8rem;
 }
 
 .btn {

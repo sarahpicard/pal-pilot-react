@@ -3,6 +3,8 @@ import { useState } from 'react'
 // import service here
 import { addAllergy } from '../../services/petService'
 
+import styles from './Information.module.css'
+
 const AllergyForm = (props) => {
   const [form, setForm] = useState({})
 
@@ -24,12 +26,13 @@ const AllergyForm = (props) => {
         <label htmlFor="allergy">
           <input 
             type="text"
-            placeholder='allergy'
+            placeholder='add an allergy'
             name='allergy'
             value={form.allergy ? form.allergy : ''}
             onChange={handleChange}
+            className={styles.input}
           />
-          <button type='submit'>Submit</button>
+          <button type='submit' className={styles.btn}>Submit</button>
         </label>
       </form>
     </>

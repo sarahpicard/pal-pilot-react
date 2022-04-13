@@ -3,6 +3,8 @@ import { useState } from 'react'
 // import service here
 import { addVaccine } from '../../services/petService'
 
+import styles from './Information.module.css'
+
 const VaccineForm = (props) => {
   const [form, setForm] = useState({})
 
@@ -24,12 +26,13 @@ const VaccineForm = (props) => {
         <label htmlFor="vaccine">
           <input 
             type="text"
-            placeholder='vaccine'
+            placeholder='add a vaccine'
             name='vaccine'
             value={form.vaccine ? form.vaccine : ''}
             onChange={handleChange}
+            className={styles.input}
           />
-          <button type='submit'>Submit</button>
+          <button type='submit' className={styles.btn}>Submit</button>
         </label>
       </form>
     </>
