@@ -2,10 +2,12 @@ import AllergyForm from "./AllergyForm"
 import MedicationForm from "./MedicationForm"
 import VaccineForm from "./VaccineForm"
 
+import styles from './Information.module.css'
+
 
 const Information = (props) => {
   return (
-    <>
+    <div>
       <MedicationForm pet={props.pet} user={props.user}/>
       <div>
         {props.pet.medications.length ?
@@ -69,7 +71,7 @@ const Information = (props) => {
         <p>This pet has no allergies</p>
         }
       </div>
-    </>
+    </div>
   )
 }
 

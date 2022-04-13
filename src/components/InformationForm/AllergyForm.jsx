@@ -21,7 +21,6 @@ const AllergyForm = (props) => {
 
   return (
     <>
-      <h6>Add an Allergy:</h6>
       <form onSubmit={addToAllergies}>
         <label htmlFor="allergy">
           <input 
