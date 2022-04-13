@@ -29,8 +29,26 @@ const MedicationForm = (props) => {
             value={form.medication ? form.medication : ''}
             onChange={handleChange}
           />
-          <button type='submit'>Submit</button>
         </label>
+        <label htmlFor="dosage">
+          <input 
+            type="text" 
+            placeholder='medication dose'
+            name='dosage'
+            value={form.dosage ? form.dosage : ''}
+            onChange={handleChange}
+          />
+        </label>
+        <label htmlFor="frequency">
+          <input 
+            type="text" 
+            placeholder='medication frequency'
+            name='frequency'
+            value={form.frequency ? form.frequency : ''}
+            onChange={handleChange}
+          />
+        </label>
+        <button type='submit'>Submit</button>
       </form>
     </>
   )

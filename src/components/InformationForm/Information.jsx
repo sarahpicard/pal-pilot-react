@@ -10,12 +10,18 @@ const Information = (props) => {
         {props.pet.medications.length ?
           <table>
             <thead>
-              <tr><th>Medications:</th></tr>
+              <tr>
+                <th>Medication</th>
+                <th>Dosage</th>
+                <th>Frequency</th>
+              </tr>
             </thead>
             <tbody>
               {props.pet.medications.map((medication) => 
                 <tr key={medication.id}>
                   <td>{medication.medication}</td>
+                  <td>{medication.dosage}</td>
+                  <td>{medication.frequency}</td>
                 </tr>
               )}
             </tbody>
