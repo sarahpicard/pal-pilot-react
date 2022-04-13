@@ -38,9 +38,6 @@ const SignupForm = props => {
     }
   }
 
-  const handleChangePhoto = (evt) => {
-    setFormData({...formData, photo: evt.target.files[0]})
-  }
 
   const { name, email, password, passwordConf } = formData
 

@@ -12,13 +12,11 @@ import Appointments from './pages/Appointments/Appointments'
 import Pet from './pages/Pet/Pet'
 
 import * as authService from './services/authService'
-import * as profileService from './services/profileService'
 import * as petService from './services/petService'
 import * as appointmentService from './services/appointmentService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
-  const [profiles, setProfiles] = useState([])
   const navigate = useNavigate()
   const [pets, setPets] = useState([])
   const [appointments, setAppointments] = useState([])

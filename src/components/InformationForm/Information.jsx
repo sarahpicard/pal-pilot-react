@@ -2,7 +2,6 @@ import AllergyForm from "./AllergyForm"
 import MedicationForm from "./MedicationForm"
 import VaccineForm from "./VaccineForm"
 
-import { FaTrashAlt } from "react-icons/fa"
 
 const Information = (props) => {
   return (

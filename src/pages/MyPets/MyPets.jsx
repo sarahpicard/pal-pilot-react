@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import PetCard from '../../components/PetCard/PetCard'
 
 import styles from './MyPets.module.css'

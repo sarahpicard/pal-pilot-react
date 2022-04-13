@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import AddAppointmentForm from '../../components/AppointmentForm/AddAppointmentForm'
 import AppointmentCard from '../../components/AppointmentCard/AppointmentCard'
 

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 import { FaArrowCircleDown } from 'react-icons/fa'
 
 import styles from './PetCard.module.css'
