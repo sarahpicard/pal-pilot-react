@@ -5,6 +5,8 @@ import { getOne } from '../../services/petService'
 
 import styles from './Pet.module.css'
 
+import Information from '../../components/InformationForm/Information'
+
 const Pet = (props) => {
   const { id } = useParams()
   const [pet, setPet] = useState(null)
@@ -29,6 +31,7 @@ const Pet = (props) => {
           <h5>Breed: {pet.breed ? pet.breed : 'no breed'}</h5>
           <p>Age: {pet.age ? pet.age : 'no age'}</p>
           <p>Weight: {pet.weight ? pet.weight : 'no weight'}</p>
+          <Information pet={pet} user={props.user} setPet={setPet}/>
           {/* <p>{pet.medications.length ? pet.medications : 'no medications'}</p>
           <p>{pet.vaccines.length ? pet.vaccines : 'no vaccines'}</p>
           <p>{pet.allergies.length ? pet.allergies : 'no allergies'}</p> */}

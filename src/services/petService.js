@@ -85,3 +85,21 @@ export const deleteOne = async (id) => {
     throw error
   }
 }
+
+// add medication
+export const addMedication = async (id, data) => {
+  try {
+    const res = await fetch(`${BASE_URL}${id}/medications`, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${tokenService.getToken()}`
+      },
+      body: JSON.stringify(data),
+    })
+    return await res.json()
+  } catch (error) {
+    console.log(error)
+    throw error
+  }
+}

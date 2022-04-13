@@ -68,10 +68,11 @@ const AddPetInput = (props) => {
             type="text" 
             placeholder='medication'
             autoComplete='off'
-            value={props.form.medications ? props.form.medications : ''}
+            value={props.form.medication ? props.form.medication : ''}
             onChange={props.handleChange}
             id="medication"
             name="medication"
+            className={styles.input}
             />
         </label>
         <label htmlFor="vaccines">Vaccine:
@@ -79,10 +80,11 @@ const AddPetInput = (props) => {
             type="text" 
             placeholder='vaccine'
             autoComplete='off'
-            value={props.form.vaccines ? props.form.vaccines : ''}
+            value={props.form.vaccine ? props.form.vaccine : ''}
             onChange={props.handleChange}
             id="vaccine"
             name="vaccine"
+            className={styles.input}
             />
         </label>
         <label htmlFor="allergies">Allergy:
@@ -93,7 +95,8 @@ const AddPetInput = (props) => {
             value={props.form.allergy ? props.form.allergy : ''}
             onChange={props.handleChange}
             id="allergy"
-            name="weight"
+            name="allergy"
+            className={styles.input}
             />
         </label> */}
     </>

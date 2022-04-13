@@ -56,6 +56,7 @@ const AddPetForm = (props) => {
       <div className={styles.form}> 
         <form onSubmit={handleSubmit}>
           <AddPetInput form={form} handleChange={handleChange} />
+          {/* <AddInformationForm pet={pet}/> */}
           <button className={styles.btn} type='submit'>Submit</button>
         </form>
       </div>
