@@ -34,9 +34,6 @@ const Pet = (props) => {
           <p>Age: {pet.age ? pet.age : 'no age'}</p>
           <p>Weight: {pet.weight ? pet.weight : 'no weight'}</p>
           <Information pet={pet} user={props.user} setPet={setPet}/>
-          {/* <p>{pet.medications.length ? pet.medications : 'no medications'}</p>
-          <p>{pet.vaccines.length ? pet.vaccines : 'no vaccines'}</p>
-          <p>{pet.allergies.length ? pet.allergies : 'no allergies'}</p> */}
           <button className={styles.btn} type='submit' onClick={() => navigate(`/pets/${pet.id}/edit`, { state: pet })}>Update</button>
         </div>
       </div>

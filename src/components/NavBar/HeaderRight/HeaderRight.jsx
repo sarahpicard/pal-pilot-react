@@ -16,11 +16,6 @@ const HeaderRight = (props) => {
                   </Link>
                 </li>
                 <li className={styles.li}>
-                  <Link to="/changePassword" style={{ textDecoration: 'none' }}>
-                    <span className={styles.span}>Change Password</span>
-                  </Link>
-                </li>
-                <li className={styles.li}>
                   <Link to="/myprofile" style={{ textDecoration: 'none' }}>
                     <span className={styles.span}>My Profile</span>
                   </Link>
