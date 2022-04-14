@@ -5,3 +5,11 @@
   padding-top: 2rem;
   width: 80%;
 }
+
+@media screen and (max-width: 850px) {
+  .section {
+    margin-left: 0;
+    padding-left: 2rem;
+    width: 100%;
+  }
+}
