@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 850px) {
   .nav {
     display: flex;
     flex-direction: row;

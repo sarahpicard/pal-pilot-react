@@ -39,7 +39,7 @@
   color: #ee7f43;
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 1165px) {
   .whole {
     display: none;
   }

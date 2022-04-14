@@ -1,12 +1,20 @@
 .section {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 9rem;
+  padding-left: 7rem;
   padding-top: 2rem;
+  padding-right: 0;
   width: 80%;
 }
 .empty {
   display: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .section {
+    padding-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -14,5 +22,6 @@
     margin-left: 0;
     padding-left: 2rem;
     width: 100%;
+    margin-right: 0;
   }
 }
