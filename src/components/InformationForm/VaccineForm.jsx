@@ -34,6 +34,7 @@ const VaccineForm = (props) => {
           />
         </label><br />
         <label htmlFor="vaccine last">
+          <span className={styles.shot}>last shot date:</span><br />
           <input 
             type="date" 
             onChange={handleChange}
@@ -43,6 +44,7 @@ const VaccineForm = (props) => {
           />
         </label><br />
         <label htmlFor="vaccine next">
+          <span className={styles.shot}>next shot due date:</span><br />
           <input 
             type="date" 
             onChange={handleChange}
