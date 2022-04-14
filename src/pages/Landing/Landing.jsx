@@ -1,6 +1,6 @@
 import styles from './Landing.module.css'
 
-import { Navigator, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Landing = ({ user, pets }) => {
   const navigate = useNavigate()
