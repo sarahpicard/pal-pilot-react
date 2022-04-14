@@ -16,7 +16,7 @@ const VaccineForm = (props) => {
   }
 
   const handleChange = (e) => {
-    setForm({...form, [e.target.name]: e.target.value })
+    setForm({ ...form, [e.target.name]: e.target.value })
   }
 
   return (
@@ -24,7 +24,7 @@ const VaccineForm = (props) => {
       <p className={styles.formhead}>Add a Vaccine:</p>
       <form onSubmit={addToVaccines}>
         <label htmlFor="vaccine">
-          <input 
+          <input
             type="text"
             placeholder='add a vaccine'
             name='vaccine'
@@ -35,20 +35,20 @@ const VaccineForm = (props) => {
         </label><br />
         <label htmlFor="vaccine last">
           <span className={styles.shot}>last shot date:</span><br />
-          <input 
-            type="date" 
+          <input
+            type="date"
             onChange={handleChange}
-            value={form.last_shot ? form.last_shot: ''}
+            value={form.last_shot ? form.last_shot : ''}
             className={styles.input}
             name='last_shot'
           />
         </label><br />
         <label htmlFor="vaccine next">
           <span className={styles.shot}>next shot due date:</span><br />
-          <input 
-            type="date" 
+          <input
+            type="date"
             onChange={handleChange}
-            value={form.next_shot ? form.next_shot: ''}
+            value={form.next_shot ? form.next_shot : ''}
             className={styles.input}
             name='next_shot'
           />
