@@ -47,17 +47,18 @@
   .p {
     font-size: 20px;
   }
+  .img {
+    display: none;
+  }
+  .container {
+    padding-left: 2rem;
+  }
 }
 @media screen and (max-width: 295px) {
   .container {
     display: flexbox;
     flex-wrap: wrap;
     padding-top: 0;
-  }
-  .img {
-    margin-left: -6rem;
-    height: 500px;
-    width: 600px;
   }
   .h1 {
     font-size: 50px;

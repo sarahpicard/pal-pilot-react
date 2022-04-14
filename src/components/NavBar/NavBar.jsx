@@ -11,10 +11,10 @@ import styles from './NavBar.module.css'
 
 const NavBar = (props) => {
   return (
-    <div >
+    <div className={styles.entire}>
       {props.user ?
         <div className={styles.nav}>
-          <ul>
+          <ul className={styles.ul}>
             <li className={styles.li}>
               <div className={styles.div}>
                 <Link to="/" className={styles.a}>
@@ -51,7 +51,7 @@ const NavBar = (props) => {
         </div>
       :
         <div className={styles.nav}>
-          <ul>
+          <ul className={styles.ul}>
             <li className={styles.li}>
               <div className={styles.div}>
                 <Link to="/" className={styles.a}>
