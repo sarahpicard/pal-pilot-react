@@ -5,3 +5,15 @@
   font-family: 'League Spartan', sans-serif;
   padding-top: 4rem;
 }
+
+@media screen and (max-width: 830px) {
+  .container {
+    padding-left: 0;
+    margin-left: 18%;
+    margin-right: 0;
+    padding-right: 0;
+    float: left;
+    display: inline-flex;
+    align-self: center;
+  }
+}
