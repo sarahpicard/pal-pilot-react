@@ -5,6 +5,9 @@
   padding-top: 2rem;
   width: 80%;
 }
+.empty {
+  display: none;
+}
 
 @media screen and (max-width: 850px) {
   .section {
