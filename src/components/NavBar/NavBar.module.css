@@ -17,7 +17,7 @@
   margin-top: -25px;
   padding: 0;
   width: 6.5rem;
-  height: 170vh;
+  height: 100vh;
   float: left;
   display: flex;
   flex-direction: column;
@@ -64,3 +64,46 @@
 .div {
   position: absolute;
 }
+
+
+/* media queries for small screen  */
+@media screen and (max-width: 1350px) {
+  .nav:hover {
+    width: 6.5rem;
+  }
+  .span {
+    display: none;
+    color: transparent;
+  }
+  .span:hover {
+    display: none;
+    color: transparent;
+  }
+}
+
+/* media queries for small screen  */
+/* @media screen and (max-width: 700px) {
+  .nav {
+    display: inline-block;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .nav:hover {
+    width: 100vw;
+  }
+  .div:hover {
+    display: none;
+  }
+  .span {
+    display: none;
+  }
+  .span:hover {
+    display: none;
+  }
+  .li {
+
+  }
+} */
