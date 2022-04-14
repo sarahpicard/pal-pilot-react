@@ -93,6 +93,10 @@
     height: 7rem;
     padding-left: 0;
   }
+  .nav:hover {
+    width: 100vw;
+    height: 7rem;
+  }
   .ul {
     width: 100%;
     display: flex;
@@ -108,13 +112,15 @@
     height: 30px;
     width: 30px;
   }
-}
-@media screen and (max-width: 400px) {
-  .icon {
-    height: 27px;
-    width: 27px;
-    justify-content: space-evenly;
+  .span {
+    display: none;
+  }
+  .span:hover {
+    display: none;
+  }
+  .div:hover {
+    background-color: #fde5d7;
+    padding: 0;
   }
 }
-
 
