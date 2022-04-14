@@ -17,8 +17,8 @@ const AddAppointmentInput = (props) => {
       </label>
       <label htmlFor="description">
         <input 
-          type="text" 
-          placeholder="appointment description"
+          type="date" 
+          placeholder="appointment date"
           autoComplete="off"
           value={props.form.description ? props.form.description : ''}
           onChange={props.handleChange}
