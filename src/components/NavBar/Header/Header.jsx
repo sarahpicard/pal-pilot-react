@@ -5,7 +5,7 @@ const Header = (props) => {
   return (
     <>
       <HeaderRight user={props.user} handleLogout={props.handleLogout} />
-      <NavBar user={props.user}  />
+      <NavBar user={props.user} handleLogout={props.handleLogout} />
     </>
   )
 }

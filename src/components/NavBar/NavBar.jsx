@@ -5,6 +5,7 @@ import { FaUserPlus } from 'react-icons/fa'
 import { FaDog } from 'react-icons/fa'
 import { FaPlus } from 'react-icons/fa'
 import { FaRegCalendarAlt } from 'react-icons/fa'
+import { FaSignOutAlt } from 'react-icons/fa'
 
 import styles from './NavBar.module.css'
 
@@ -44,6 +45,14 @@ const NavBar = (props) => {
                 <Link to="/appointments" className={styles.a}>
                   <FaRegCalendarAlt className={styles.icon}/>
                   <span className={`${styles.span} ${styles.appointment}`}>Appointments</span>
+                </Link>
+              </div>
+            </li>
+            <li className={styles.li}>
+              <div className={styles.div}>
+                <Link to="" onClick={props.handleLogout} className={styles.a}>
+                  <FaSignOutAlt className={styles.icon}/>
+                  <span className={styles.span}>Log Out</span>
                 </Link>
               </div>
             </li>
