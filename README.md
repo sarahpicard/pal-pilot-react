@@ -10,13 +10,10 @@ This project is part of a decoupled full stack application. The backend code can
 ## **🙀 Take a look at Pal Pilot [HERE](https://pal-pilot.netlify.app/)**
 <br>
 
---- 
-
 ## Wireframing & Concept 📝
 ![wireframe](https://i.imgur.com/JQHAZP9.png)
 Original wireframing for the project was completed prior to development. The above screenshot details a basic design concept prior to project completion.
 
-<br>
 <br>
 
 # Using Pal Pilot 🦮
