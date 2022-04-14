@@ -4,6 +4,7 @@
   width: 200px;
   margin-top: 0.1rem;
   margin-bottom: 0.5rem;
+  margin-left: 3rem;
   border: none;
   background-color: #e8f7fc;
   border-radius: 70px;
@@ -24,7 +25,7 @@
   font-family: 'Libre Baskerville', serif;
   font-size: 12px;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 .btn:hover {
   background-color: #8dd7f0;
@@ -32,8 +33,21 @@
 }
 
 .table {
-  width: 27rem;
+  width: 24rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+  margin-left: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.t {
+  border: 0.5px rgba(0,0,0,0.04) solid;
+}
+.infodiv {
+  display: flex;
+  /* flexbox */
+  flex-direction: row;
+}
+.allergy {
+  margin-top: 5rem;
 }

@@ -7,17 +7,17 @@
   flex-wrap: wrap;
   flex-direction: column;
   height: 44rem;
-  width: 70rem;
+  width: 75rem;
   background-color: #fef7f3;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: 2rem;
-  padding-left: 5rem;
+  padding-left: 4rem;
   margin-left: 8rem;
 }
 
 .btn {
   height: 38px;
-  width: 90px;
+  width: 95px;
   background-color: #bae7f6;
   border: none;
   border-radius: 70px;

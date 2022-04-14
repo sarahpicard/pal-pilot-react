@@ -4,11 +4,70 @@ import VaccineForm from "./VaccineForm"
 
 import styles from './Information.module.css'
 
+import Moment from 'react-moment'
+
 
 const Information = (props) => {
   return (
-    <div>
+    <div className={styles.infodiv}>
       <div>
+        {props.pet.vaccines.length ?
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th className={styles.t}>Vaccine</th>
+                <th className={styles.t}>Last Shot</th>
+                <th className={styles.t}>Next Shot Due</th>
+              </tr>
+            </thead>
+            <tbody>
+              {props.pet.vaccines.map((vaccine) => 
+                <tr key={vaccine.id}>
+                  <td className={styles.t}>{vaccine.vaccine}</td>
+                  <td className={styles.t}>
+                    <Moment format="MM/DD/YYYY">
+                      {vaccine.last_shot}
+                    </Moment>
+                  </td>
+                  <td className={styles.t}>
+                    <Moment format="MM/DD/YYYY">
+                      {vaccine.next_shot}
+                    </Moment>
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        :
+        <p>This pet has no vaccines</p>
+      }
+      <VaccineForm pet={props.pet} user={props.user} />
+      </div>
+      <div>
+        {props.pet.medications.length ?
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th className={styles.t}>Medication</th>
+                <th className={styles.t}>Dosage</th>
+                <th className={styles.t}>Frequency</th>
+              </tr>
+            </thead>
+            <tbody>
+              {props.pet.medications.map((medication) => 
+                <tr key={medication.id}>
+                  <td className={styles.t}>{medication.medication}</td>
+                  <td className={styles.t}>{medication.dosage}</td>
+                  <td className={styles.t}>{medication.frequency}</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        :
+        <p>This pet has no medications</p>
+      }
+      <MedicationForm pet={props.pet} user={props.user}/>
+      <div className={styles.allergy}>
         {props.pet.allergies.length ?
           <table>
             <thead>
@@ -26,56 +85,7 @@ const Information = (props) => {
         <p>This pet has no allergies</p>
       }
       <AllergyForm pet={props.pet} user={props.user}/>
-      </div><br />
-      <div>
-        {props.pet.vaccines.length ?
-          <table>
-            <thead>
-              <tr>
-                <th>Vaccine</th>
-                <th>Last Shot</th>
-                <th>Next Shot Due</th>
-              </tr>
-            </thead>
-            <tbody>
-              {props.pet.vaccines.map((vaccine) => 
-                <tr key={vaccine.id}>
-                  <td>{vaccine.vaccine}</td>
-                  <td>{vaccine.last_shot}</td>
-                  <td>{vaccine.next_shot}</td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        :
-        <p>This pet has no vaccines</p>
-      }
-      <VaccineForm pet={props.pet} user={props.user} />
       </div>
-      <div>
-        {props.pet.medications.length ?
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Medication</th>
-                <th>Dosage</th>
-                <th>Frequency</th>
-              </tr>
-            </thead>
-            <tbody>
-              {props.pet.medications.map((medication) => 
-                <tr key={medication.id}>
-                  <td>{medication.medication}</td>
-                  <td>{medication.dosage}</td>
-                  <td>{medication.frequency}</td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        :
-        <p>This pet has no medications</p>
-      }
-      <MedicationForm pet={props.pet} user={props.user}/>
       </div>
     </div>
   )
