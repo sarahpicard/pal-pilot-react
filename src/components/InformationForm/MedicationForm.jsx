@@ -21,6 +21,7 @@ const MedicationForm = (props) => {
 
   return (
     <>
+      <p className={styles.formhead}>Add a Medication:</p>
       <form onSubmit={addToMedication}>
         <label htmlFor="medication">
           <input 

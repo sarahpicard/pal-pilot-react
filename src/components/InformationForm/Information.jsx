@@ -68,10 +68,11 @@ const Information = (props) => {
       }
       <MedicationForm pet={props.pet} user={props.user}/>
       <div className={styles.allergy}>
+        <AllergyForm pet={props.pet} user={props.user}/>
         {props.pet.allergies.length ?
-          <table>
+          <table className={styles.allergytable}>
             <thead>
-              <tr><th>Allergies:</th></tr>
+              <tr><th>All Allergies:</th></tr>
             </thead>
             <tbody>
               {props.pet.allergies.map((allergy) => 
@@ -84,7 +85,6 @@ const Information = (props) => {
         :
         <p>This pet has no allergies</p>
       }
-      <AllergyForm pet={props.pet} user={props.user}/>
       </div>
       </div>
     </div>

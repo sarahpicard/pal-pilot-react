@@ -21,6 +21,7 @@ const AllergyForm = (props) => {
 
   return (
     <>
+      <p className={styles.formhead}>Add an Allergy:</p>
       <form onSubmit={addToAllergies}>
         <label htmlFor="allergy">
           <input 

@@ -1,6 +1,7 @@
 .div {
   display: flex;
   padding-top: 3rem;
+  font-family: 'League Spartan', serif;
 }
 .whole {
   display: flex;
@@ -11,10 +12,16 @@
   background-color: #fef7f3;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: 2rem;
-  padding-left: 4rem;
+  padding-left: 1rem;
   margin-left: 8rem;
 }
-
+.intro {
+  font-size: 20px;
+  text-align: center;
+}
+.h1 {
+  font-size: 50px;
+}
 .btn {
   height: 38px;
   width: 95px;

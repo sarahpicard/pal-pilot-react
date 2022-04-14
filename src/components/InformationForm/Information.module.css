@@ -2,7 +2,7 @@
 .input {
   height: 40px;
   width: 200px;
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   margin-left: 3rem;
   border: none;
@@ -49,5 +49,14 @@
   flex-direction: row;
 }
 .allergy {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
+}
+.allergytable {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.formhead {
+  margin-left: 4rem;
+  margin-bottom: 0;
 }

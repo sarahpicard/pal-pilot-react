@@ -21,6 +21,7 @@ const VaccineForm = (props) => {
 
   return (
     <>
+      <p className={styles.formhead}>Add a Vaccine:</p>
       <form onSubmit={addToVaccines}>
         <label htmlFor="vaccine">
           <input 
