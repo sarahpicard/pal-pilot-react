@@ -2,7 +2,7 @@ import styles from './AddPetInput.module.css'
 
 const AddPetInput = (props) => {
   return (
-    <>
+    <div className={styles.inputContainer}>
         <label htmlFor="name">Name:
           <input 
             type="text"  
@@ -63,7 +63,7 @@ const AddPetInput = (props) => {
             className={styles.input}
             />
         </label><br />
-    </>
+    </div>
   )
 }
 
