@@ -39,7 +39,7 @@ const Information = (props) => {
             </tbody>
           </table>
         :
-        <p>This pet has no vaccines</p>
+        <p className={styles.no}>This pet has no vaccines 😿</p>
       }
       <VaccineForm pet={props.pet} user={props.user} />
       </div>
@@ -64,7 +64,7 @@ const Information = (props) => {
             </tbody>
           </table>
         :
-        <p>This pet has no medications</p>
+        <p className={styles.no}>This pet has no medications 💊</p>
       }
       <MedicationForm pet={props.pet} user={props.user}/>
       <div className={styles.allergy}>
@@ -83,7 +83,7 @@ const Information = (props) => {
             </tbody>
           </table>
         :
-        <p>This pet has no allergies</p>
+        <p className={styles.no}>This pet has no allergies 🤧</p>
       }
       </div>
       </div>
