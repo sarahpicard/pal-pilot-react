@@ -2,7 +2,7 @@ import styles from './AddAppointmentInput.module.css'
 
 const AddAppointmentInput = (props) => {
   return (
-    <>
+    <div className={styles.inputContainer}>
       <label htmlFor="name">
         <input 
           type="text" 
@@ -39,7 +39,7 @@ const AddAppointmentInput = (props) => {
           className={styles.input}
         />
       </label>
-    </>
+    </div>
   )
 }
 

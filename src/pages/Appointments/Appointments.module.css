@@ -11,3 +11,26 @@
   padding-left: 9rem;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 850px) {
+  .whole {
+    display: flexbox;
+    flex-direction: column;
+    float: left;
+    text-align: center;
+  }
+  .appForm {
+    margin-top: -5rem;
+    justify-content: center;
+  }
+  .appSection {
+    justify-content: center;
+  }
+  .appForm, .appSection {
+    display: flexbox;
+    margin-left: 1rem;
+    padding-left: 0;
+    margin-right: 1rem;
+    padding-right: 0;
+  }
+}

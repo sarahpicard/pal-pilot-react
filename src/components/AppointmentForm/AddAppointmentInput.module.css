@@ -31,3 +31,35 @@
   background-color: #8dd7f0;
   transition: all .3s ease-in-out;
 }
+.whole {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .inputContainer {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .input {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    margin-right: 0;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .whole, .form {
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    float: left;
+    margin-left: 0;
+    display: flexbox;
+    align-self: center;
+  }
+}

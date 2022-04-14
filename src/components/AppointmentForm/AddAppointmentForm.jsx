@@ -40,15 +40,17 @@ const AddAppointmentForm = (props) => {
   }, [id])
 
   return (
-    <>
-      <h4>Add A New Appointment:</h4>
-      <form onSubmit={handleSubmit}>
+    <div>
+      <div className={styles.whole}>
+        <h4>Add A New Appointment:</h4>
+      </div><br />
+      <form onSubmit={handleSubmit} className={styles.form}>
         <AddAppointmentInput form={form} handleChange={handleChange} />
         <button type='submit' className={styles.btn}>
             Submit
         </button>
       </form>
-    </>
+    </div>
   )
 }
 

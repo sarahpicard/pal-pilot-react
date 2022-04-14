@@ -5,7 +5,7 @@ import styles from './Appointments.module.css'
 
 const Appointments = (props) => {
   return (
-    <div>
+    <div className={styles.whole}>
       <div className={styles.appForm}>
         <AddAppointmentForm addAppointment={props.addAppointment} />
       </div>

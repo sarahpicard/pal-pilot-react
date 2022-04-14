@@ -21,3 +21,10 @@
   background-color: #fef7f3;
   cursor: pointer;
 }
+
+@media screen and (max-width: 850px) {
+  .whole {
+    height: 14rem;
+    width: 18rem;
+  }
+}
