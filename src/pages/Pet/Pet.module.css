@@ -40,3 +40,23 @@
   background-color: #8dd7f0;
   transition: all .3s ease-in-out;
 }
+
+
+@media screen and (max-width: 850px) {
+  .div {
+    display: flexbox;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 1rem;
+    float: left;
+  }
+  .whole {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 90%;
+  }
+}
