@@ -6,7 +6,6 @@ import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import MyPets from './pages/MyPets/MyPets'
 import AddPetForm from './pages/AddPet/AddPetForm'
-import MyProfile from './pages/MyProfile/MyProfile'
 import Appointments from './pages/Appointments/Appointments'
 import Pet from './pages/Pet/Pet'
 
@@ -127,10 +126,6 @@ const App = () => {
         <Route
           path="/appointments"
           element={user ? <Appointments user={user} pets={pets} appointments={appointments} addAppointment={addAppointment} deleteAppointment={deleteAppointment} /> : <Navigate to="/login" />}
-        />
-        <Route
-          path="/myprofile"
-          element={user ? <MyProfile user={user} /> : <Navigate to="/login" />}
         />
       </Routes>
     </>
